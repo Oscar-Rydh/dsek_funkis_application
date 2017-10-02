@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
+import FlatButton from 'material-ui/FlatButton'
 
 
 class Navbar extends Component {
@@ -18,6 +19,7 @@ class Navbar extends Component {
             <AppBar
                 title="D-sek ansök till funktionärsposter"
                 onLeftIconButtonTouchTap={this.handleLeftIconButtonTouchTap}
+                iconElementRight={<FlatButton primary={true} label="Login" />}
             />
             </div>
         )

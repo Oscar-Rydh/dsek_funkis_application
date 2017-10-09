@@ -6,14 +6,15 @@ import PostItem from '../PostItem/PostItem';
 class PostsList extends Component {
     constructor (props) {
         super (props);
-        this.state = {posts: [{title: 'Näringslivskontakt', utskott: 'Näringsliv'}, {title: 'Arbetare', utskott: 'Sexet'}]}
+        this.state = {posts: [{title: 'Näringslivskontakt', utskott: 'Näringsliv', link: 'https://www.google.com'}, {title: 'Arbetare', utskott: 'Sexet', link: 'https://www.facebook.com'}]}
     }
 
     renderList () {
         return this.state.posts.map(item => {
+            console.log(item)
             return (
                 <div>
-                <PostItem title={item.title} utskott={item.utskott} /> 
+                <PostItem title={item.title} utskott={item.utskott} link={item.link} /> 
                 <Divider />
                 </div>
             )

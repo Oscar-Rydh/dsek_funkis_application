@@ -21,7 +21,7 @@ class App extends Component {
   render() {
 
     if (this.state.admin) {
-      return (
+      /*return (
         <div className="App">
         <MuiThemeProvider>
         <Navbar />
@@ -34,18 +34,12 @@ class App extends Component {
           <PostForm />
         </MuiThemeProvider>
       </div>
-      )
+      )*/
     } else {
       return (
         <div className="App">
           <MuiThemeProvider>
           <Navbar />
-          <Toggle
-              toggled={this.state.admin}
-              onToggle={this.handleToggle}
-              labelPosition="right"
-              label="Act as admin"
-            />
           <PostsList />
           </MuiThemeProvider>
         </div>

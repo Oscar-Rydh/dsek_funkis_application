@@ -8,6 +8,7 @@ import logo from '../../D-symbol.svg'
 class PostItem extends Component  {
     constructor(props) {
         super(props);
+        console.log(props);
         this.state = {
             expanded: false,
         };
@@ -58,7 +59,7 @@ class PostItem extends Component  {
                 <li> Be awesome </li>
             </CardText>
             <CardActions expandable={true}>
-            <RaisedButton primary={true} label="Ansök" />
+            <RaisedButton primary={true} label="Ansök" href={this.props.link}/>
             </CardActions>
             <CardActions>
                 <FlatButton label="Mer info" onClick={this.handleExpand} />

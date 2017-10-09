@@ -19,7 +19,6 @@ class Navbar extends Component {
             <AppBar
                 title="D-sek ansök till funktionärsposter"
                 onLeftIconButtonTouchTap={this.handleLeftIconButtonTouchTap}
-                iconElementRight={<FlatButton primary={true} label="Login" />}
             />
             </div>
         )

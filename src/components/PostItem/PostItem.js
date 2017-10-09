@@ -8,7 +8,6 @@ import logo from '../../D-symbol.svg'
 class PostItem extends Component  {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {
             expanded: false,
         };

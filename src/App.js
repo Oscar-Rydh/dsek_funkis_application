@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import PostsList from './components/PostsList/PostsList';
 import Navbar from './components/Navbar/Navbar';
-import Toggle from 'material-ui/Toggle';
-import PostForm from './components/PostForm/PostForm.js';
+//import Toggle from 'material-ui/Toggle';
+//import PostForm from './components/PostForm/PostForm.js';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component {

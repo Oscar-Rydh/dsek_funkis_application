@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
-import Toggle from 'material-ui/Toggle'
 import logo from '../../D-symbol.svg'
 
 class PostItem extends Component  {
@@ -40,22 +39,25 @@ class PostItem extends Component  {
                 showExpandableButton={true}
             />
             <CardText expandable={false} >
-                A Brief textfield for the post 
+                {this.props.salesPitch}
             </CardText>
             <CardHeader                 
                 title="Description"
                 expandable={true}
             />
             <CardText expandable={true}>
-                This is some description about the post 
+                {this.props.description}
             </CardText>
              <CardHeader                 
                 title="Responsabilities"
                 expandable={true}
             />
             <CardText expandable={true}>
-                <li> Be great </li>
-                <li> Be awesome </li>
+                {
+                    this.props.responsabillities.map(entry => {
+                        return <li> {entry} </li> 
+                    })
+                }
             </CardText>
             <CardActions expandable={true}>
             <RaisedButton primary={true} label="Ansök" href={this.props.link}/>
